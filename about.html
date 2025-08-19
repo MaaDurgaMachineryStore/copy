@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css"/>
+</head>
+<body>
+      <div id="loader">
+  <video autoplay muted loop playsinline id="loadingVideo">
+    <source src="loading screen.mp4" type="video/mp4">
+    
+  </video>
+   
+</div>
+    <h1> About<br>
+         Government Polytechnic Chopan, Sonbhadra
+        </h1>
+    <p>
+        Established in 2016, Government Polytechnic Chopan, Sonbhadra has quickly risen to prominence as a leading government institution dedicated to technical education in the state of Uttar Pradesh.<br> Operating under the affiliation of the <b>Board of Technical Education, Uttar Pradesh, Lucknow, </b>  the institute reflects the state government's vision of promoting quality education in engineering and technology to empower the youth and contribute meaningfully to the nation’s development.<br><br>
+
+The inception of <b>Government Polytechnic Chopan </b>was a strategic initiative to extend technical education opportunities to the Sonbhadra region, which has historically been underrepresented in terms of higher educational infrastructure.<br> The institute initially commenced its academic operations on the campus of <b> Government Polytechnic Sonbhadra </b>located at Lodhi, Robertsganj.<br> This arrangement facilitated a smooth start to academic activities while the institute's permanent infrastructure in Chopan was being developed.<br> Since its foundation, the institute has been committed to providing a nurturing learning environment that fosters both academic excellence and practical skills.<br><br>
+
+Government Polytechnic Chopan currently offers three core diploma programs, which are carefully designed to meet the evolving demands of the technical industry and contribute to the skill development of its students.<br> These diploma courses include Computer Science and Engineering, Electronics Engineering, and Automobile Engineering.<br> Each program is crafted to impart foundational knowledge alongside industry-relevant skills through a well-structured curriculum approved by the Board of Technical Education, Uttar Pradesh.<br> The inclusion of these disciplines ensures that students are trained in some of the most critical and dynamic fields of engineering, thereby enhancing their employability and capacity for innovation.<br><br>
+
+<h2> The Computer Science and Engineering</h2>
+<b>The Computer Science and Engineering </b> diploma program focuses on equipping students with the principles of programming, software development, computer hardware, and networking.<br> With the IT sector growing exponentially, graduates from this program find themselves well-prepared to enter various roles in software development companies, IT services, and digital startups.<br><br>
+<h2>Electronics Engineering</h2>
+In the field of <b> Electronics Engineering </b>, the curriculum covers fundamental electronic circuits, communication systems, microprocessors, and embedded systems.<br> This equips students with the technical acumen needed to work in industries ranging from telecommunications to consumer electronics and automation.<br><br> 
+
+<h2>Automobile Engineering </h2>
+The <b>Automobile Engineering </b> program addresses the growing automotive sector, emphasizing vehicle design, manufacturing processes, and maintenance technologies.<br> Students gain hands-on experience with engines, transmissions, and electrical systems, preparing them for careers in the rapidly advancing automobile industry, which increasingly incorporates cutting-edge technologies like electric and hybrid vehicles.<br><br>
+
+<h2> Other Things</h2>
+Beyond the academic curriculum, <b>Government Polytechnic Chopan </b>places strong emphasis on inclusivity and practical learning.<br> The institute strives to create a supportive environment where students from diverse socio-economic backgrounds can thrive.<br> Dedicated faculty members and state-of-the-art laboratories support experiential learning, enabling students to apply theoretical knowledge to real-world challenges.<br> <b>Workshops, seminars, and industry visits </b> are regularly organized to expose students to contemporary trends and practices, thereby bridging the gap between academia and industry.<br><br>
+
+Furthermore, the institution actively collaborates with industry partners and government agencies to align its training with national development goals.<br> This includes promoting skill development initiatives under schemes like <b>“Skill India”</b> and encouraging entrepreneurial thinking among students.<br> The goal is to create technically proficient graduates who are not only job-ready but also capable of contributing to innovation and sustainable development.<br><br>
+
+Over the years, <b>Government Polytechnic Chopan </b> has earned a reputation as one of the most respected <b> polytechnic institutions in Uttar Pradesh </b>.<br> Its commitment to academic excellence, practical training, and inclusive education makes it a preferred choice for aspiring engineers in the region.<br> The institute continues to expand its infrastructure, faculty, and academic programs, aiming to keep pace with technological advancements and industry requirements.<br><br>
+
+In conclusion, <b> Government Polytechnic Chopan </b>stands as a beacon of quality technical education in <b> Sonbhadra </b>, dedicated to nurturing the next generation of skilled engineers and technologists.<br> Its alignment with both industry needs and national priorities ensures that its graduates are well-equipped to face the challenges of tomorrow’s workforce and contribute positively to society’s progress.<br>
+    </p>
+    <script>
+
+  const revealElements = document.querySelectorAll("h2, p");
+
+  window.addEventListener("scroll", () => {
+    const triggerBottom = window.innerHeight * 0.9;
+
+    revealElements.forEach(el => {
+      const boxTop = el.getBoundingClientRect().top;
+      if (boxTop < triggerBottom) {
+        el.classList.add("show");
+      }
+    });
+  });
+</script>
+<footer class="footer">
+      <p>© 2025 ALL RIGHTS RESERVED GOVT. POLYTECHNIC CHOPAN, SONBHADRA</p>
+      <p>(Maintained By <strong>Dr. Vivek Srivastava and Students</strong> — Computer Science and Engineering)</p>
+    </footer>
+    <script src="style.js"></script>
+</body>
+</html>

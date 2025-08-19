@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Government Polytechnic Chopan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+  <video autoplay muted loop playsinline id="loadingVideo">
+    <source src="loading screen.mp4" type="video/mp4">
+    
+  </video>
+</div>
+
+ 
+
+  <div id="content" style="display:none;">
+
+    <img src="LOGO5.png" alt="Logo" class="logo">
+
+    <div class="header-text">
+      <h1>Government Polytechnic Chopan, Sonbhadra</h1>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="photo.html">PHOTO GALLERY</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="#">COURSE OFFERED</a></li>
+      </ul>
+    </nav>
+
+    <div class="content-container">
+      <div class="carousel">
+        <div class="slides" id="slides">
+          <img src="clg.jpg" alt="Image 1" /> 
+          <img src="clg1.jpg" alt="Image 2" />
+          <img src="clg3.jpg" alt="Image 3" />
+          <img src="clg4.webp" alt="Image 4" />
+          <img src="clg10.jpeg" alt="Image 5" />
+        </div>
+      </div>
+
+      <script>
+        const slides = document.getElementById('slides');
+        const totalImages = slides.children.length;
+        let index = 0;
+        function slideImages() {
+          index++;
+          if (index >= totalImages) {
+            index = 0;
+          }
+          slides.style.transform = `translateX(${-600 * index}px)`;
+        }
+        setInterval(slideImages, 3000);
+      </script>
+
+      <div class="news-events-box">
+        <h3><u>News And Events</u></h3>
+        <p>
+          JEECUP Counselling related queries & important documents for verification 2025. Click here...<br>
+          JEECUP Counselling related List of documents required for Admission 2025. Click here...<br>
+          JEECUP Counselling related Fee Structure for Admission 2025. Click here to view...<br><br>
+          JBM recruits 27 students from Mechanical, Automobile 3rd year on campus drive<br><br>
+          <a href="#" style="color: purple;">An event on Food Waste Management</a>
+        </p>
+      </div>
+    </div>
+
+   <div class="middle-section">
+     <div class="person left">
+       <img src="aziz.jpg" alt="Shri Aziz Ahmad" />
+        <a href="#">Shri Aziz Ahmad</a> 
+        <p>Director<br>Directorate of Technical Education, Uttar Pradesh</p> 
+        <img src="narendra.jpg" alt="Shri Narendra Bhooshan" /> 
+        <a href="#">Shri Narendra Bhooshan (IAS)</a> 
+        <p>Add. Chief Secretary, Technical Education<br>
+          Uttar Pradesh</p>
+         </div>
+          <div class="description">
+             <h2>GOVERNMENT POLYTECHNIC CHOPAN SONBHADRA</h2>
+              <p> Established in 2016, Government Polytechnic Chopan, Sonbhadra has rapidly emerged as a key government institution dedicated to technical education in Uttar Pradesh.<br> 
+                Affiliated with the Board of Technical Education, Uttar Pradesh, Lucknow, the institute embodies the state’s vision of empowering youth through quality engineering and technology education.<br><br> 
+                The institute was founded to expand technical education opportunities in the Sonbhadra region, an area previously lacking sufficient higher educational infrastructure.<br> 
+                Initially, academic activities began at the Government Polytechnic Sonbhadra campus in Lodhi, Robertsganj, while the permanent facilities in Chopan were being developed.<br> 
+                From the outset, the institute has focused on creating an environment that nurtures academic excellence and practical skills.<br><br>
+                 Government Polytechnic Chopan offers three core diploma programs: Computer Science and Engineering, Electronics Engineering, and Automobile Engineering.<br>
+                  These programs are designed to equip students with foundational knowledge and industry-relevant skills, following a curriculum approved by the Board of Technical Education, Uttar Pradesh.<br>
+                   This ensures graduates are well-prepared for critical and evolving engineering fields.<br><br> The Computer Science program emphasizes programming, software development, and networking, preparing students for IT and software roles.<br>
+                    Electronics Engineering covers electronic circuits, communication systems, and embedded technology, catering to telecommunications and automation industries.<br>
+                     The Automobile Engineering diploma focuses on vehicle design, manufacturing, and maintenance, addressing the demands of a rapidly advancing automotive sector.<br><br> 
+                     The institute strongly promotes inclusivity and hands-on learning.<br> With experienced faculty, modern labs, and regular workshops and industry visits, students gain practical experience and exposure to current industry trends.<br><br> 
+                     Collaborations with industry and government initiatives like “Skill India” ensure that training aligns with national development goals.<br> Graduates emerge not only job-ready but also capable of innovation and sustainable contributions.<br><br>
+                      Government Polytechnic Chopan has earned a respected reputation in Uttar Pradesh for quality education and remains committed to expanding and evolving its offerings to meet future challenges.<br>
+                     </p> 
+                    </div>
+                     <div class="person right">
+                       <img src="principal.jpg" alt="Principal" />
+                        <a href="#">Brijendra Singh</a> 
+                        <p>Principal<br>Government Polytechnic Chopan Sonbhadra</p>
+
+        <div class="message"> <h4>PRINCIPAL'S MESSAGE</h4>
+           <p> When learning is purposeful, creativity blossoms.<br>
+             When creativity blossoms, thoughtful thinking emerges.<br>
+              When thinking flourishes, knowledge shines brightly.”<br>
+               — Dr. APJ Abdul Kalam<br><br> 
+               At Government Polytechnic Chopan (GPCS), 
+               we firmly believe that graduating is not the final goal—it is a step toward lifelong education.<br>
+                True education is not measured by how much you memorize or how much information you acquire.<br> 
+                Instead, it is about how effectively you can apply that knowledge in real-world situations after gaining technical education.<br>
+                 Our mission is to empower students to transform their learning into practical skills that drive innovation and progress.<br> </p> </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 ALL RIGHTS RESERVED GOVT. POLYTECHNIC CHOPAN, SONBHADRA</p>
+      <p>(Maintained By <strong>Dr. Vivek Srivastava and Students</strong> — Computer Science and Engineering)</p>
+    </footer>
+  </div> 
+
+ 
+
+  <script src="style.js"></script>
+</body>
+</html>

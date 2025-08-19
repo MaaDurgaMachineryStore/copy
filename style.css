@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Chela+One&family=Michroma&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+
+body {
+    text-align: center;
+    background:#FFFF; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Federant', serif;
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+#loader.fade-out {
+  opacity: 0;
+  pointer-events: none; 
+}
+
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+}
+
+.header-text h1 {
+    margin-top: 40px;
+    color: black; 
+}
+
+.navbar {
+    background-color: #e74c57; 
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+}
+
+
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 8px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #c0392b; 
+    border-radius: 4px;
+}
+.carousel {
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    width: 600px; 
+    overflow: hidden;
+    margin: auto;
+    border: 2px solid #ccc;
+  }
+  .slides {
+    display: flex;
+    width: calc(600px * 5); 
+    transition: transform 1s ease;
+  }
+  .slides img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .news-events-box {
+  background-color: #f7e5c9; 
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #5a2e00; 
+   font-family: 'Chela One', cursive;
+  width: 700px;
+  height: 400px;
+}
+
+.news-events-box h3 {
+  color: #a03527; 
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.news-events-box p {
+  color: #5a2e00;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.news-events-box a {
+  color: purple;
+  text-decoration: none;
+}
+
+.news-events-box a:hover {
+  text-decoration: underline;
+}
+.content-container {
+  display: flex;
+  justify-content: right;
+  gap: 40px;             
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.carousel {
+  width: 600px; 
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+.news-events-box {
+  max-width: 700px; 
+  max-height: 900px;
+  background-color: #f7e5c9;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #5a2e00;
+  font-family: 'Chela One', cursive;
+  text-align: center;  
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Michroma', sans-serif;
+  padding: 40px 20px;
+  color: black;
+  gap: 20px;
+
+}
+
+.person {
+  flex: 1;
+  max-width: 220px;
+  text-align: center;
+  
+}
+
+.person img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  opacity: 0;
+  transform: translateY(30px);
+
+  animation-name: fadeInOut;
+  animation-duration: 1s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+  animation-fill-mode: forwards; 
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  99.9% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0; 
+  }
+}
+.person img.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 0.6s;
+  animation-timeline: view();
+  animation-range: exit 50% cover 100%;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.person a {
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.person p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.description {
+  flex: 2.5;
+ font-family: 'Aguafina Script', cursive;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: justify;
+  
+}
+
+.description h2 {
+  text-align: center;
+  color: #1d085c;
+}
+
+.message {
+  font-family: 'Aguafina Script', cursive;
+  color: black;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+  border-radius: 5px;
+  
+}
+
+.message h4 {
+  text-align: center;
+  color: darkred;
+  text-transform: uppercase;
+  
+}
+.footer {
+  background: #c62828;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+
